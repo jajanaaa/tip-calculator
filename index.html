@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <label for="bill">Bill</label>
+        <input type="number" id="bill" name="bill" placeholder="0" />
+        <br />
+        <label for="select-tip">Select Tip %</label>
+
+        <div class="persentage-buttons">
+          <button type="button" class="persentage-button">5%</button>
+          <button type="button" class="persentage-button">10%</button>
+          <button type="button" class="persentage-button">15%</button>
+          <button type="button" class="persentage-button">25%</button>
+          <button type="button" class="persentage-button">50%</button>
+
+          <!-- <label for="custom-button"></label> -->
+          <input
+            type="number"
+            id="custom-button"
+            name="custom-button"
+            placeholder="Custom"
+          />
+        </div>
+        <br />
+        <label for="number-of-people">Number of People</label>
+        <input
+          type="number"
+          id="number-of-people"
+          name="number-of-people"
+          placeholder="0"
+        />
+      </div>
+      <div class="container-right">
+        <div class="container-right-inside">
+          <div>
+            <div class="right-tip">
+              <div>
+                <p class="p-tip">Tip Amount</p>
+                <p class="person">/ person</p>
+              </div>
+              <p id="tip-amount">$0.00</p>
+            </div>
+            <div class="right-tip">
+              <div>
+                <p class="p-tip">Total</p>
+                <p class="person">/ person</p>
+              </div>
+              <p id="total">$0.00</p>
+            </div>
+          </div>
+          <button type="button" id="reset-button">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
